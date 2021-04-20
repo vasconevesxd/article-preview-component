@@ -13,34 +13,49 @@
     />
 
     <title>Frontend Mentor | Article preview component</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div class="container">
       <div class="card">
         <div class="card__header"></div>
-        <div class="card__body">
-          <h3>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h3>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-        <div class="card__footer">
-          <figure>
-            <img src="images/avatar-michelle.jpg" class="avatar" alt="avatar michelle" />
-            <figcaption>        
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p></figcaption>
-          </figure>
-          <button class="btn-share">
-       
-            <img src="images/icon-share.svg" alt="icon share" >
-          </button>
+        <div class="content">
+          <div class="card__body">
+            <h3>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h3>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="card__footer">
+            <div class="user-profile">
+              <figure>
+                <img
+                  src="images/avatar-michelle.jpg"
+                  class="avatar"
+                  alt="avatar michelle"
+                />
+                <figcaption>
+                  <p>Michelle Appleton</p>
+                  <p>28 Jun 2020</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="social" style="display: none;">
+              <h4>Share</h4>
+              <img src="./images/icon-facebook.svg" alt="icon facebook" />
+              <img src="./images/icon-twitter.svg" alt="icon twitter" />
+              <img src="./images/icon-pinterest.svg" alt="icon pinterest" />
+            </div>
+
+            <button class="btn-share">
+              <img src="images/icon-share.svg" alt="icon share" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
