@@ -82,6 +82,7 @@ p{
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2.5rem;
+  background-color: transparent;
 }
 
 figure {
@@ -111,7 +112,10 @@ figcaption p:nth-child(2) {
   color: var(--dark-desaturated-blue);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  background-color: var(--darker-grayish-blue);
+
 }
+
 
 .social img {
   width: 1.2rem;
@@ -119,14 +123,30 @@ figcaption p:nth-child(2) {
   margin: 0 0.5rem;
 }
 
+.social{
+  z-index: 99;
+  position: absolute;
+
+}
+
+.hide{
+  display: none;
+}
+
 .btn-share {
   background-color: var(--light-grayish-blue);
   border: 0;
   border-radius: 2rem;
   padding: 0.6rem;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 90em) {
+
+  .hide{
+    display: none;
+  }
+  
 
   .card__header {
     height: auto;
@@ -135,5 +155,34 @@ figcaption p:nth-child(2) {
 
   .card {
     display: flex;
+    position: absolute;
+  }
+
+
+  .social {
+    position: absolute;
+    top: 55%;
+    right: -8%;
+    z-index: 99;
+    border-radius: 0.5rem;
+    padding: 0.1rem 2.5rem;
+    color: var(--dark-desaturated-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background-color: var(--darker-grayish-blue);
+
+  }
+
+  .social::after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    margin-left: -60px;
+    width: 0;
+    height: 0;
+    border-top: solid 15px var(--darker-grayish-blue);;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
   }
 }
