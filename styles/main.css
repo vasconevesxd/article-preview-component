@@ -141,7 +141,7 @@ figcaption p:nth-child(2) {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 80em) {
 
   .hide{
     display: none;
